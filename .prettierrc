@@ -1,0 +1,25 @@
+{
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "proseWrap": "never",
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": [
+        "*.md"
+      ],
+      "options": {
+        "parser": "markdown"
+      }
+    }
+  ]
+}
