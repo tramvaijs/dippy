@@ -14,6 +14,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
+          cache-dependency-path: 'package.json'
+          cache: 'yarn'
           node-version: "20"
 
       - name: dependencies
@@ -33,6 +35,8 @@ jobs:
       - name: Setup Node ${{ matrix.node }}
         uses: actions/setup-node@v5
         with:
+          cache-dependency-path: 'package.json'
+          cache: 'yarn'
           node-version: ${{ matrix.node }}
 
       - name: dependencies
@@ -49,6 +53,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
+          cache-dependency-path: 'package.json'
+          cache: 'yarn'
           node-version: "20"
 
       - name: dependencies
